@@ -58,6 +58,6 @@ ORM.initialize(require('./ORM/config'), function (err, models) {
 		});
 	});
 	app.listen(portDCL, function (){
-		console.log('DCL is working on :' + hostDCL + ":" + portDCL);
+		console.log('DCL is working on port number: ' + portDCL);
 	});
 });
