@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 require('./ORM/init')(modelPath);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.all('/', function (req,res){
-	res.send("welcome to DCL");
+	res.send("Welcome to DAC of DCL. You can request these URLs: http://dcldac.cloudapp.net/android/ and http://dcldac.cloudapp.net/kinect/");
 });
 app.use('/android', require('./routers/androidR'));
 app.use('/kinect', require('./routers/kinectR'));
